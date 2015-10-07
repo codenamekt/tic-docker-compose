@@ -8,6 +8,4 @@ RUN curl -o /tmp/chronograf_$(echo $CHRONOGRAF_VERSION)_amd64.deb https://s3.ama
 
 ADD chronograf.toml /opt/chronograf/chronograf.toml
 
-EXPOSE 9080
-
 CMD ["/opt/chronograf/chronograf", "-config=/opt/chronograf/chronograf.toml"]
