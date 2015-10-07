@@ -1,0 +1,17 @@
+influxdb:
+  build: influxdb/
+  ports:
+    - "8083:8083"
+    - "8086:8086"
+
+telegraf:
+  build: telegraf/
+  links:
+   - influxdb
+
+chronograf:
+  build: chronograf/
+  ports:
+    - "9080:9080"
+  links:
+   - influxdb
