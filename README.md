@@ -24,17 +24,9 @@ You will immediately start seeing stats (cpu, memory, load) getting pushed into 
 
 Access the Chronograf UI by hitting [http://localhost:9080](http://localhost:9080) with a web browser to view the statistics.
 
-# Screenshots
+# Screenshot
 
-### Telegraf
-![Telegraf](telegraf.png?raw=true "Telegraf")
-
-### InfluxDB
-![InfluxDB_Web](influxdb_web.png?raw=true "InfluxDB_Web")
-![InfluxDB](influxdb.png?raw=true "InfluxDB")
-
-### Chronograf
-![Chronograf](chronograf.png?raw=true "Chronograf")
+![Screenshot](screenshot.png?raw=true "Screenshot")
 
 # Thanks
 
