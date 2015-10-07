@@ -2,9 +2,9 @@
 
 |Service  | Base Image | Port |
 |--------:|:----------:|:----:|
-|[telegraf](https://collectd.org/)|[:link:](https://hub.docker.com/r/yaronr/collectd/)|25826/udp||
-|[influxdb](https://www.elastic.co/products/logstash)|[:link:](https://registry.hub.docker.com/_/logstash/)|5000||
-|[chronograf](https://www.elastic.co/products/elasticsearch)|[:link:](https://registry.hub.docker.com/_/elasticsearch/)|9200||
+|[telegraf](https://github.com/influxdb/telegraf)|[:link:](https://hub.docker.com/r/codenamekt/telegraf/)|None||
+|[influxdb](https://influxdb.com/)|[:link:](https://hub.docker.com/r/codenamekt/influxdb/)|8083, 8086||
+|[chronograf](https://influxdb.com/chronograf/index.html)|[:link:](https://hub.docker.com/r/codenamekt/chronograf/)|9080||
 
 # Setup
 
@@ -24,8 +24,18 @@ You will immediately start seeing stats (cpu, memory, load) getting pushed into 
 
 Access the Chronograf UI by hitting [http://localhost:9080](http://localhost:9080) with a web browser to view the statistics.
 
-![Kibana](screenshot.png?raw=true "Kibana")
+# Screenshots
+
+### Telegraf
+![Telegraf](telegraf.png?raw=true "Telegraf")
+
+### InfluxDB
+![InfluxDB_Web](influxdb_web.png?raw=true "InfluxDB_Web")
+![InfluxDB](influxdb.png?raw=true "InfluxDB")
+
+### Chronograf
+![Chronograf](chronograf.png?raw=true "Chronograf")
 
 # Thanks
 
-* [Elastic](https://www.elastic.co)
+* [InfluxDB](https://influxdb.com/)
